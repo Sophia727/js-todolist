@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding: 0;
+    /* text-align: center; */
+    color: white;
+    box-sizing: border-box;
+}
+body{
+    background:url('greens.jpg') no-repeat;
+    background-size: 100%;
+}
+.title{
+    /* font-style: italic; */
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h3{
+    margin: 25px;
+    text-align: center;
+    
+}
+.container{
+    padding: 30px;
+    position: absolute;
+    top: 3%;
+    margin: 0 25%;
+    text-align: center;
+    width: 500px;
+    height: 550px;
+    background-color: rgba(38, 51, 34, 0.726);
+}
+#task{
+    right: 5px;
+    position: relative;
+}
+.bx{
+    background-color: transparent;
+    color: red;
+    border: none;
+    border-color: transparent;
+}
+input{
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    border-color: transparent;
+    width: 100%;
+    display: block;
+    margin: 10px;
+    cursor: pointer;
+    color: black;
+}
+input:active{
+    border: transparent;    
+
+}
+input:focus + label{
+    top: -68px;
+    color: white;
+    left: 35%;
+    font-weight: 700;
+    background-color: rgb(46, 134, 53);
+    border-radius: 10px;
+    padding: 0 25px;
+}
+label{
+    position: relative;
+    top: -43px;
+    left: 39%;
+    content: "Enter task";
+    transition: all 0.2s ;
+    display: block;
+    width: max-content;
+    color: grey;
+}
+.form_control{
+    outline: rgb(1, 51, 1);
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+}
+.btn{
+    width: 8rem;
+    height: 2.5rem;
+    padding: 7px;
+    background-color: rgb(46, 134, 53);
+    color: white;
+    font-size: medium;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+/* .tasklist{
+    position: fixed;
+    transition: top 0.3s; 
+} */
+.tasklist ul{
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+li{
+    list-style-type:circle;
+    font-style: italic;
+    /* margin-left: 20px; */
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 5rem;
+    margin-bottom: solid 5px white;
+}
+ul{
+    border-left: 1px solid white;
+    border-right: solid 1px white;
+    display: block;
+    /* scroll-behavior: smooth; */
+    
+}
+
